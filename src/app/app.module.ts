@@ -10,6 +10,37 @@ import { ProductViewComponent } from './product-view/product-view.component';
 import { UserdataViewComponent } from './userdata-view/userdata-view.component';
 import { TodoViewComponent } from './todo-view/todo-view.component';
 import { QuotesViewComponent } from './quotes-view/quotes-view.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const myRoute: Routes=
+[
+  {
+    path:"",
+    component: PassengerViewComponent
+  },
+  {
+  path:"product",
+  component: ProductViewComponent
+},
+{
+  path:"quotes",
+  component: QuotesViewComponent
+},
+
+{
+  path:"us",
+  component: UsViewComponent
+},
+{
+  path:"userdata",
+  component: UserdataViewComponent
+},
+{
+  path:"userinfo",
+  component: UserinfoViewComponent
+}
+
+]
 
 @NgModule({
   declarations: [
@@ -24,7 +55,8 @@ import { QuotesViewComponent } from './quotes-view/quotes-view.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    RouterModule.forRoot(myRoute)
   ],
   providers: [],
   bootstrap: [AppComponent]
