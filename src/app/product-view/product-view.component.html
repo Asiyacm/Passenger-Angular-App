@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <div class="row g-3 mt-3">
+                <div class="col col-12 col-sm-6 col-md-6 col-lg-4 col-xl-4 col-xxl-4" *ngFor="let i of productinfo.products">
+                    <div class="card">
+                        <img height="300px" width="200px" src={{i.images}} class="card-img-top" alt="...">
+                        <h5 class="card-title">Id:{{i.id}}</h5>
+                        <p class="card-text">Title:{{i.title}}</p>
+                        <p class="card-text">Description:{{i.description}}</p>
+                        <p class="card-text">Price:{{i.price}}</p>
+                        <p class="card-text">Discount Percentage:{{i.discountPercentage}}</p>
+                        <p class="card-text">Rating:{{i.rating}}</p>
+                        <p class="card-text">Stock:{{i.stock}}</p>
+                        <p class="card-text">Brand:{{i.brand}}</p>
+                        <p class="card-text">Category:{{i.category}}</p>
+                        <p class="card-text">Thumbnail:{{i.thumbnail}}</p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
