@@ -8,18 +8,16 @@
       <tr>
        
         <th scope="col">Id</th>
-        <th scope="col">To do</th>
-        <th scope="col">Completed</th>
-        <th scope="col">UserId</th>
+        <th scope="col">Quote</th>
+        <th scope="col">Author</th>
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let i of todo.todos">
+      <tr *ngFor="let i of quotesinfo.quotes">
        
         <td>{{i.id}}</td>
-        <td>{{i.todo}}></td>
-        <td>{{i.completed}}</td>
-        <td>{{i.userId}}</td>
+        <td>{{i.quote}}></td>
+        <td>{{i.author}}</td>
       </tr>
      
     </tbody>
