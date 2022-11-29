@@ -11,6 +11,7 @@ import { UserdataViewComponent } from './userdata-view/userdata-view.component';
 import { TodoViewComponent } from './todo-view/todo-view.component';
 import { QuotesViewComponent } from './quotes-view/quotes-view.component';
 import { RouterModule, Routes } from '@angular/router';
+import { NavigationComponent } from './navigation/navigation.component';
 
 const myRoute: Routes=
 [
@@ -51,7 +52,8 @@ const myRoute: Routes=
     ProductViewComponent,
     UserdataViewComponent,
     TodoViewComponent,
-    QuotesViewComponent
+    QuotesViewComponent,
+    NavigationComponent
   ],
   imports: [
     BrowserModule,
