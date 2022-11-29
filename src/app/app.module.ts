@@ -12,6 +12,7 @@ import { TodoViewComponent } from './todo-view/todo-view.component';
 import { QuotesViewComponent } from './quotes-view/quotes-view.component';
 import { RouterModule, Routes } from '@angular/router';
 import { NavigationComponent } from './navigation/navigation.component';
+import { HttpClientModule } from '@angular/common/http';
 
 const myRoute: Routes=
 [
@@ -58,7 +59,8 @@ const myRoute: Routes=
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
